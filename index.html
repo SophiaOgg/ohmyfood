@@ -15,8 +15,15 @@
 
 <body>
     <main>
+
+        <!-- Section header -->
         <header>
-            <img class="logo" src="Maquette Ohmyfood/images/logo/ohmyfood.png">
+            <img class="logo" src="Maquette%20Ohmyfood/images/logo/ohmyfood.png">
+        </header>
+
+        <!-- Section recherche_explorer -->
+
+        <section class="research_explorer">
 
             <form class="research_box" method="post">
 
@@ -28,31 +35,36 @@
 
             </form>
 
-            <h1>Réserver le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, sélection par nos soins</p>
+            <div class="bloc_explorer">
 
-            <div class="button_explorer"><a href="#">Explorer nos restaurants</div></a>
+               <h1>Réserver le menu qui <br>vous convient<br></h1>
+               <p>Découvrez des restaurants d'exception,<br> sélection par nos soins<br></p>
+               <div class="button_explorer"><a href="#">Explorer nos restaurants</div></a>
+            </div>
 
-        </header>
+            
+        </section>
 
+  <!-- Section Filtre -->
 
-        <div id="Filtre">
+        <section id="Filtre">
 
             <h2 class="title_filtre">Fonctionnement</h2>
 
             <div id="choix_filtres">
 
                 <ul>
-                    <li><a href="#"> 1 <i class="fa-solid fa-mobile-screen-button"></i><span>Choisissez un restaurant</span></a></li>
+                   <a href="#"><li><p> 1 </p><i class="fa-solid fa-mobile-screen-button"></i><span>Choisissez un restaurant</span></li></a>
 
-                    <li><a href="#"> 2 <i class="fa-solid fa-list-ul"></i><span>Composez votre menu</span></a></li>
+                    <a href="#"><li><p> 2 </p><i class="fa-solid fa-list-ul"></i><span>Composez votre menu</span></li></a>
 
-                    <li><a href="#"> 3 <i class="fa-solid fa-store"></i><span>Dégustez au restaurant</span></a></li>
+                    <a href="#"><li><p> 3 </p><i class="fa-solid fa-store"></i><span>Dégustez au restaurant</span></li></a>
 
                 </ul>
             </div>
-        </div>
+        </section>
 
+        <!-- Section restaurant -->
 
         <section class="restaurant">
 
@@ -62,12 +74,14 @@
 
             <div class="contenair_rest">
                 <div class="type_rest">
-
+                    
                     <a href="#">
-                        <img class="img_rest"
-                            src="Maquette Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                        <div class="new">
+                         <img class="img_rest"
+                            src="Maquette%20Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                             alt="La palette du goût">
                             <span>Nouveau</span>
+                        </div>
 
                         <div class="bloc_rest">
                             <h3 class="titre_rest">La palette du goût</h3>
@@ -83,11 +97,12 @@
                     <div class="type_rest">
 
                         <a href="#">
+                            <div class="new">
                             <img class="img_rest"
-                                src="Maquette Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                                src="Maquette%20Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
                                 alt="La note enchantee">
                                 <span>Nouveau</span>
-
+                            </div>
                             <div class="bloc_rest">
                                 <h3 class="titre_rest">La note enchantée</h3>
                                 <p class="adresse_rest"><span>Charonne</span></p>
@@ -102,11 +117,13 @@
                         <div class="type_rest">
     
                             <a href="#">
-                                <img class="img_rest"
-                                    src="Maquette Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                                <div class="new">
+                                 <img class="img_rest"
+                                    src="Maquette%20Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                                     alt="A la française">
                                     <span>Nouveau</span>
-    
+                                </div>
+
                                 <div class="bloc_rest">
                                     <h3 class="titre_rest">À la française</h3>
                                     <p class="adresse_rest"><span>Cité Rouge</span></p>
@@ -122,11 +139,12 @@
                             <div class="type_rest">
         
                                 <a href="#">
-                                    <img class="img_rest"
-                                        src="Maquette Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                    <div class="new">
+                                      <img class="img_rest"
+                                        src="Maquette%20Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                                         alt="Le délice des sens">
                                         <span>Nouveau</span>
-        
+                                    </div>
                                     <div class="bloc_rest">
                                         <h3 class="titre_rest">Le délice des sens</h3>
                                         <p class="adresse_rest"><span>Folie-Méricourt</span></p>
@@ -142,7 +160,7 @@
         <footer>
             <div class="footer">
                 <div class="footer_box">
-                    <h4 class="container">ohmyfood</h4>
+                    <h4 class="title_footer">ohmyfood</h4>
                     <ul class="liste">
                         <li><a class="link" href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
                         <li><a class="link" href="#"><i class="footer__icon fas fa-hands-helping"></i>Devenir partenaire</a></li>

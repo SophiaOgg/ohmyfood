@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
+
+body
+{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  margin: 0;
+  color: #000000;
+
+
+}
+
+main
+{
+  margin-left: auto;
+  margin-right: auto;
+  max-width:768px;
+  overflow: hidden
+}
+
+
+a 
+{
+  text-decoration: none;
+  color: initial;
+}
+
+/* Section header*/
+
+.logo
+{
+    width: 30%;
+    padding: 15px;
+    
+   
+}
+
+
+header 
+{
+
+text-align: center;
+box-shadow: 0px 5px 5px lightgrey;
+margin-bottom: 5px;
+   
+}
+
+/* Section recherche */
+
+.research_explorer
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;  
+  
+}
+.research_box
+{
+    background-color: #eaeaea; 
+    padding: 15px;
+  
+}
+.research_bar
+{
+ border:none; 
+
+ background-color: #eaeaea;
+margin-left: 15px;
+font-size:medium;
+font-weight: bold;
+
+
+}
+.research_box i
+{
+margin-left: 90px;
+}
+ 
+.button_explorer a
+{   
+    background: linear-gradient(170deg, #ff79da, #9356dc);
+    border: 2px solid #D9D9D9;
+    border-radius: 20px;
+    padding: 15px;
+    width: 30%;
+    border:none;
+    box-shadow: 4px 4px 2px lightgrey;
+    color:white;
+    text-align: center;
+    font-size: small;
+  
+   
+}
+.bloc_explorer p
+{
+    padding-bottom: 15px;
+
+}
+
+.button_explorer
+{
+    padding-bottom: 30px;
+}
+
+.bloc_explorer
+{
+    background: linear-gradient(white, #eaeaea);
+    padding-bottom: 30px;
+}
+
+/* Section Filtre */
+
+#Filtre
+{
+    margin-top: 50px;
+}
+
+.title_filtre
+{
+    margin-left: 15px;
+}
+#Filtre li
+{
+  
+    margin-top: 20px;  
+ 
+}
+
+#choix_filtres ul
+
+{
+ 
+    list-style-type: none;
+}
+
+
+#choix_filtres li
+{
+
+  position: relative;
+  border: none;
+  box-shadow: 4px 4px 2px lightgrey;
+  background-color: #f6f6f6;
+  border-radius: 20px 20px;
+  width: 70%;
+  padding: 10px;
+  margin-left: 50px;
+
+  text-align: center;
+
+
+}
+#choix_filtres i
+{
+    margin: 15px;
+    color: gray;
+    
+}
+#choix_filtres span
+{
+   
+}
+
+#choix_filtres p
+{
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: small;
+   background-color: #9356dc;
+   color: white;
+   left: -0.5em;
+}
+
+#choix_filtres i:hover
+{
+    color:#9356dc;
+}
+
+#choix_filtres li:hover
+{
+    background-color: #f2eafb;
+}
+
+/* Section restaurant */
+
+.restaurant
+{
+    margin-left: 25px;
+    align-items: center; 
+    width: 100%;
+}
+
+.contenair_rest
+{
+    margin-top: 20px;
+}
+
+.img_rest
+{
+ 
+    width: 100%;
+    height: 150px;
+   
+    border-radius: 20px 20px 0px 0px;
+  
+    object-fit: cover;
+}
+
+.type_rest
+{
+position: relative;
+background-color: white;
+box-shadow: 0 5px 5px 1px lightgray;
+border-radius: 20px;
+
+width: 90%;
+
+}
+
+.new span
+{
+    position: absolute;
+    font-weight: bold;
+    z-index: 1;
+    background-color: #99e2d0;
+    color: #1a8a68;
+    text-align: center;
+    right: 1em;
+    top: 1em;
+    padding: 5px;
+    font-size: small;   
+  
+}
+
+.bloc_rest
+{
+    position: relative;
+    line-height: 6px;
+    margin-left: 15px;
+    padding-bottom: 5px;
+}
+
+.coeur
+{
+    position: absolute;
+    right: 1em;
+    top: 0em;
+    margin-right: 15px;
+    font-size: larger;
+    
+    
+}
+.coeur:hover
+{
+    background: linear-gradient(to bottom left, #9356dc, #ff79da);
+}
+/* Section footer */
+.footer {
+    width: 100%;
+    background-color: #353535;
+    height: 250px;
+    padding-top: 40px;
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  
+  
+  .liste {
+    list-style-type: none;
+  }
+  
+  .title_footer {
+    margin-left: 40px;
+    font-family: 'Shrikhand';
+    color: white;
+    font-weight: lighter;
+  }
+  
+  .link {
+    text-decoration: none;
+    color:white;
+    line-height: 40px;
+    
+  }
+
+.liste i
+{
+padding-right: 10px;
+color: white;
+}

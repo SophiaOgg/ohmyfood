@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=500, initial-scale=1" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menu.css" />
     <title>Ohmyfood</title>
 
     <script src="https://kit.fontawesome.com/329d2b928c.js" crossorigin="anonymous"></script>
@@ -16,15 +16,18 @@
 <body>
     <main>
         <header>
-            <img class="logo" src="Maquette Ohmyfood/images/logo/ohmyfood.png">
-            <span><i class="fa-solid fa-arrow-left"></i></span>
 
-            <img src="Maquette Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg " alt="la palette du gout">
+             <span><i class="fa-solid fa-arrow-left"></i></span>
+             <img class="logo" src="Maquette Ohmyfood/images/logo/ohmyfood.png">           
 
         </header>
 
+        <section id="presentation">
 
-        <section class="menu1">
+             <img src="Maquette Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg " alt="la palette du gout">
+        </section>
+
+        <section id="menu1">
 
             <div class=" title_menu">
                 <h2>La palette du goût</h2>
@@ -33,7 +36,8 @@
 
             <div class="contenair_entree">
 
-                <div class="entree"><a href="#">ENTRÉES</div></a>
+                <div class="entree"><h3>ENTRÉES</h3> <div class= "underline"></div></div>
+
                     
                     <div class="bloc_entree">
                         <a href="#">
@@ -58,7 +62,7 @@
                 
                     <div class="contenair_plat">
 
-                        <div class="plat"><a href="#">PLATS</div></a>
+                        <div class="plat"><h3>PLATS</h3><div class= "underline"></div></div>
                             
                             <div class="bloc_plat">
                                 <a href="#">
@@ -83,7 +87,7 @@
 
                             <div class="contenair_dessert">
 
-                                <div class="dessert"><a href="#">DESSERTS</div></a>
+                                <div class="dessert"><h3>DESSERTS</h3><div class= "underline"></div></div>
                                     
                                     <div class="bloc_dessert">
                                         <a href="#">
@@ -104,14 +108,16 @@
                                             <h3>Mousse au chocolat</h3>
                                             <p>Au piment d'Espelette et à la truffe noire<span>23€</span></p>
                                          </a>
-                                    </div>                
+                                    </div>                                
+                                 
         </section>       
 
-    
+        <div class="button_explorer"><a href="#">Commander</div></a>
+        
         <footer>
             <div class="footer">
                 <div class="footer_box">
-                    <h4 class="container">ohmyfood</h4>
+                    <h4 class="title_footer">ohmyfood</h4>
                     <ul class="liste">
                         <li><a class="link" href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
                         <li><a class="link" href="#"><i class="footer__icon fas fa-hands-helping"></i>Devenir partenaire</a></li>

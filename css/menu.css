@@ -14,8 +14,7 @@ main
 {
   margin-left: auto;
   margin-right: auto;
-  max-width:768px;
-  overflow: hidden
+  overflow: hidden;
 }
 
 
@@ -58,8 +57,24 @@ header i
 
 /* Section menu1 */
 
+#menu1
+{
+    
+  background-color: #f6f6f6;
+  padding-bottom: 50px;
+  width: 100%;
+
+}
+.contenair_entree
+
+{
+  margin-left: 50px;
+   
+}
+
 .title_menu
 {
+
  
   border-top-left-radius: 30px 30px;
   border-top-right-radius: 30px 30px;
@@ -68,14 +83,16 @@ header i
   
  
   background-color: #f6f6f6;
+ 
   font-family: 'shrikhand';
   font-size: large;
+
   
 }
 
 .title_menu h2
 {
-    padding: 15px;
+   padding: 15px;
 }
 
 .title_menu i
@@ -85,16 +102,27 @@ header i
     top: 1em;
     padding: 10px;
 }
+
+
 #menu1
 {
     background-color: #f6f6f6;
 }
-.entree
+
+/* Entree */
+
+.entree 
 {
 margin-top: -60px;
-margin-left: 10px;
-}
+line-height: 0px;
 
+
+}
+.entree h3
+{
+    color:  #555;
+    font-weight: 500;
+}
 .underline
 {
 width: 50px;
@@ -105,71 +133,181 @@ padding: 0;
 
 }
 
-.bloc_entree
+.bloc_entree 
 {
     background-color: white;
     box-shadow: 2px 2px 2px lightgrey;
-    border-radius: 20px 20px;
-    width: 90%;
-    margin-left: 10px;
+    border-radius: 15px 15px;
+    width: 90%; 
+      
+    
    
 }
 
-.plat
+
+.bloc_entree h3
+{
+    margin-bottom: -10px;
+    padding-top: 12px;
+    margin-left: 12px;
+}
+
+.bloc_entree p
 {
   
-    margin-left: 50px;
+    color:  #555;
+    font-weight: 500;
+    font-size: small;
+    margin-left: 12px;
+    padding-bottom: 12px;
+  
+
+}
+
+.bloc_entree span
+{
+    position: absolute;
+    right: 3.3rem;
+    font-weight: bolder;
+    color: #000000;
+    
+}
+
+/* Plat */
+
+.plat 
+{
+    padding-top: 15px;
+    line-height: 0px;
 }  
+
+.plat h3
+{
+    color:  #555;
+    font-weight: 500;
+}
+
 
 .bloc_plat
 {
     background-color: white;
     box-shadow: 2px 2px 2px lightgrey;
-    border-radius: 20px 20px;
+    border-radius: 15px 15px;
     width: 90%;
-    margin-left: 10px; 
+ }
+
+.bloc_plat h3
+{
+    margin-bottom: -10px;
+    padding-top: 12px;
+    margin-left: 12px;
 }
+
+.bloc_plat p
+{
+    color:  #555;
+    font-weight: 500;
+    font-size: small;
+    margin-left: 12px;
+    padding-bottom: 12px;
+}
+
+.bloc_plat span
+{
+    position: absolute;
+    right: 3.3rem;
+    font-weight: bolder;
+    color: #000000;
+}
+/* Dessert */
 
 .dessert
 {
-    margin-left: 10px;
+    
+    padding-top: 15px;
+    line-height: 0px;
 }
-
+.dessert h3
+{
+    color: gray;
+    font-weight: 500;
+}
 .bloc_dessert
 {
     background-color: white;
     box-shadow: 2px 2px 2px lightgrey;
-    border-radius: 20px 20px;
+    border-radius: 15px 15px;
     width: 90%;
-    margin-left: 10px 
+    
+    
 }
 
-.button_explorer a
+.bloc_dessert h3
+{
+    margin-bottom: -10px;
+    padding-top: 12px;
+    margin-left: 12px;
+}
+
+.bloc_dessert p
+{
+    color:  #555;
+    font-weight: 500;
+    font-size: small;
+    margin-left: 12px;
+    padding-bottom: 12px;
+}
+
+.bloc_dessert span
+{
+    position: absolute;
+    right: 3.3rem;
+    font-weight: bolder;
+    color: #000000;
+}
+
+/* Bouton commander */
+
+.button_commander a
 { 
     background: linear-gradient(170deg, #ff79da, #9356dc);
     border: 2px solid #D9D9D9;
     border-radius: 20px;
-    padding: 15px;
+    padding: 12px 55px ;
     width: 30%;
     border:none;
     box-shadow: 4px 4px 2px lightgrey;
     color:white;
     text-align: center;
     font-size: small;
+   
+   
+   
+   
 }  
+
+.button_commander
+{
+    padding-left: 100px ;
+    padding-top: 50px;  
+    width: 100%;
+    
+
+}
    
   
    
 
 /* Section footer */
 
+
 .footer {
     width: 100%;
     background-color: #353535;
     height: 250px;
-    padding-top: 40px;
+    padding-top: 10px;
     margin-left: 0;
-    margin-top: 50px;
+   
   }
   
   

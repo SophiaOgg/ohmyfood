@@ -62,11 +62,9 @@ margin-bottom: 5px;
 .research_bar
 {
  border:none; 
-
  background-color: #eaeaea;
-margin-left: 15px;
-font-size:medium;
-font-weight: bold;
+ font-size:medium;
+ font-weight: bold;
 
 
 }
@@ -87,9 +85,21 @@ margin-left: 90px;
     color:white;
     text-align: center;
     font-size: small;
+    cursor: pointer;
+    transition: 250ms;
+  
   
    
 }
+
+.button_explorer a:hover
+{
+    
+    background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
+    box-shadow: 8px 8px 2px #acabab;
+    
+}
+
 .bloc_explorer p
 {
     padding-bottom: 15px;
@@ -105,6 +115,7 @@ margin-left: 90px;
 {
     background: linear-gradient(white, #eaeaea);
     padding-bottom: 30px;
+    text-align: center;
 }
 
 /* Section Filtre */
@@ -155,10 +166,6 @@ margin-left: 90px;
     color: gray;
     
 }
-#choix_filtres span
-{
-   
-}
 
 #choix_filtres p
 {
@@ -182,6 +189,11 @@ margin-left: 90px;
     background-color: #f2eafb;
 }
 
+#choix_filtres span
+{
+    margin-right: 70px ;
+}
+
 /* Section restaurant */
 
 .restaurant
@@ -189,12 +201,10 @@ margin-left: 90px;
     margin-left: 25px;
     align-items: center; 
     width: 100%;
+   
+
 }
 
-.contenair_rest
-{
-    margin-top: 20px;
-}
 
 .img_rest
 {
@@ -215,6 +225,7 @@ box-shadow: 0 5px 5px 1px lightgray;
 border-radius: 20px;
 
 width: 90%;
+margin-top: 20px;
 
 }
 
@@ -255,6 +266,8 @@ width: 90%;
 {
     background: linear-gradient(to bottom left, #9356dc, #ff79da);
 }
+
+  
 /* Section footer */
 .footer {
     width: 100%;
@@ -288,4 +301,143 @@ width: 90%;
 {
 padding-right: 10px;
 color: white;
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1024px)
+{
+   
+main
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+   
+}    
+#bloc_exp_filtre
+{
+    display: flex;
+
+  
+    width: 100%;
+      
+}
+
+.bloc_explorer
+{
+   
+    width: 50%;
+
+}
+
+.bloc_explorer h1 
+{
+    align-self: start;
+}
+#Filtre 
+{
+    
+    width: 50%;
+    background: linear-gradient(white, #eaeaea);
+    margin-top: 0;  
+    
+}
+
+.title_filtre
+{
+  margin-left: 30px;
+  
+
+}
+#Filtre li
+{
+  margin-left: 0;
+
+}
+
+#choix_filtres li
+{
+width: 90%;
+
+}
+
+
+.contenair_rest1, .contenair_rest2
+{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    
+}
+
+.type_rest
+{
+   
+    margin: 10px;
+   
+}
+     
+}
+
+
+/* Tablette */
+
+@media all and (min-width: 768px) and (max-width: 992px )
+{
+ 
+    #bloc_exp_filtre
+    {
+        display: flex;
+    
+      
+        width: 100%;
+          
+    }
+    
+    .bloc_explorer
+    {
+       
+        width: 50%;
+    
+    }
+    
+    .bloc_explorer h1 
+    {
+        align-self: start;
+    }
+    #Filtre 
+    {
+        
+        width: 50%;
+        background: linear-gradient(white, #eaeaea);
+        margin-top: 0;  
+        
+    }
+    
+    .title_filtre
+    {
+      margin-left: 30px;
+      
+    
+    }
+    #Filtre li
+    {
+      margin-left: 0;
+    
+    }
+    
+    #choix_filtres li
+    {
+    width: 90%;
+    
+    }
+
+     .type_rest
+     {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+     }
+
 }

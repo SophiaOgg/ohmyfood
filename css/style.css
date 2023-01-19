@@ -26,6 +26,48 @@ a
 
 /* Section header*/
 
+.loader
+{
+    border: 1.6rem solid #9356dc;
+    border-top: 1.6rem solid #ff79da;
+    border-radius: 50%;
+  
+  
+   width: 12rem; 
+    height:12rem;
+   
+  margin: auto;
+  position: absolute;
+  top:0; left:0; right:0; bottom:0;
+
+    animation: spin 1s linear;
+    animation-fill-mode: forwards;
+
+   
+}
+
+
+
+  @keyframes spin {
+    from {
+      -webkit-transform: rotate(360deg);
+    }
+    to {
+      -webkit-transform: rotate(0deg);
+    }
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(360deg);
+      opacity: 1;
+    }
+    to {
+      transform: rotate(0deg);
+      opacity: 0;
+    }
+  }
+
+
 .logo
 {
     width: 30%;
@@ -252,21 +294,32 @@ margin-top: 20px;
     padding-bottom: 5px;
 }
 
-.coeur
+
+
+.coeur i
 {
     position: absolute;
     right: 1em;
     top: 0em;
     margin-right: 15px;
-    font-size: larger;
-    
-    
-}
-.coeur:hover
-{
-    background: linear-gradient(to bottom left, #9356dc, #ff79da);
+    font-size: larger;  
+      
 }
 
+.coeur i {
+    color: #686565;
+    font-size: 1.5rem;
+  }
+
+.coeur i:hover {
+
+    cursor: pointer;
+    background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
   
 /* Section footer */
 .footer {

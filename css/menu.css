@@ -185,22 +185,7 @@ padding: 0;
     color: #000000;
     
 }
-.bloc_entree {
-    animation-name: appear;
-    animation-duration: 1000ms;
-    animation-fill-mode: backwards;
-  }
 
-@keyframes appear{
-    from {
-      transform: translateY(-100px);
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 
 /* Plat */
 
@@ -250,22 +235,31 @@ padding: 0;
     color: #000000;
 }
 
-.bloc_plat {
-    animation-name: appear;
-    animation-duration: 1000ms;
-    animation-fill-mode: backwards;
-  }
+.trans1 {
+  animation: appear 1s ease-in-out;
+}
 
-@keyframes appear{
-    from {
-      transform: translateY(-100px);
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+.trans2 {
+  animation: appear 2s ease-in-out;
+}
+
+.trans3 {
+  animation: appear 3s ease-in-out;
+}
+
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
   }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 /* Dessert */
 
 .dessert
@@ -295,6 +289,7 @@ padding: 0;
     margin-bottom: -10px;
     padding-top: 12px;
     margin-left: 12px;
+    width: 80%;
 }
 
 .bloc_dessert p
@@ -304,6 +299,7 @@ padding: 0;
     font-size: small;
     margin-left: 12px;
     padding-bottom: 12px;
+    width: 80%;
 }
 
 .bloc_dessert span
@@ -312,24 +308,17 @@ padding: 0;
     right: 1rem;
     font-weight: bolder;
     color: #000000;
+    width: 20%;
 }
 
-.bloc_dessert {
-    animation-name: appear;
-    animation-duration: 1000ms;
-    animation-fill-mode: backwards;
-  }
+.cross 
+{
+position: absolute;
+right: 2em;
+top: 1em;
 
-@keyframes appear{
-    from {
-      transform: translateY(-100px);
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+}
+
 
 /* Bouton commander */
 

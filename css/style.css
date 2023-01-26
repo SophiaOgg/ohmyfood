@@ -12,8 +12,7 @@ body
 
 main
 {
-  margin-left: auto;
-  margin-right: auto;
+
   overflow: hidden;
 }
 
@@ -34,19 +33,29 @@ a
   
   
    width: 12rem; 
-    height:12rem;
+  height:12rem;
    
   margin: auto;
   position: absolute;
   top:0; left:0; right:0; bottom:0;
 
-    animation: spin 1s linear;
-    animation-fill-mode: forwards;
+  animation: spin 2s linear;
+  animation-fill-mode: forwards;
 
    
 }
 
-
+.bg_loader
+{
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+  animation: loader 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+}
 
   @keyframes spin {
     from {
@@ -67,6 +76,14 @@ a
     }
   }
 
+  @keyframes loader {
+    from { 
+      opacity: 1;
+    }
+    to { 
+      opacity: 0;
+    }
+  }
 
 .logo
 {

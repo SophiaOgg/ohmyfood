@@ -51,7 +51,6 @@ a
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 2;
   animation: loader 2s;
   animation-delay: 1.5s;
   animation-fill-mode: both;
@@ -79,9 +78,11 @@ a
   @keyframes loader {
     from { 
       opacity: 1;
+      z-index: 2;
     }
     to { 
       opacity: 0;
+      z-index: -1;
     }
   }
 
@@ -378,13 +379,8 @@ color: white;
 @media screen and (min-width: 1024px)
 {
    
-main
-{
-    margin-left: auto;
-    margin-right: auto;
 
-   
-}    
+ 
 #bloc_exp_filtre
 {
     display: flex;

@@ -107,6 +107,17 @@ header i {
   background-color: #f6f6f6;
 }
 
+.titre h3
+{
+  white-space: nowrap; 
+}
+
+.sous-titre p
+
+{
+  white-space: nowrap;
+}
+
 /* Entree */
 
 .entree {
@@ -135,24 +146,21 @@ header i {
   background-color: white;
   box-shadow: 2px 2px 2px lightgrey;
   border-radius: 15px 15px;
-
-}
-
-.bloc_entree:hover
-{
-margin-right: 70px;
+  
 
 }
 
 
 
-.bloc_entree h3 {
+
+
+.titre h3 {
   margin-bottom: -10px;
   padding-top: 12px;
   margin-left: 12px;
 }
 
-.bloc_entree p {
+.sous-titre p {
 
   color: #555;
   font-weight: 500;
@@ -163,7 +171,7 @@ margin-right: 70px;
 
 }
 
-.bloc_entree span {
+.prix {
   position: absolute;
   right: 1rem;
   font-weight: bolder;
@@ -172,6 +180,102 @@ margin-right: 70px;
 }
 
 
+.bloc_entree:hover .prix
+{
+  transform: translate(-60px);
+  transition: transform 330ms ease-in-out;
+
+
+}
+
+
+.cross {
+
+  position: absolute;
+  right: -3.9em;
+  top: 0em;
+
+  
+  
+  background-color:#99e2d0;
+  width: 70px;
+  height:65px;
+ 
+
+
+
+  border-radius: 0px 15px 15px 0px;
+  color: #fff;
+ 
+  cursor: pointer;
+  opacity: 0;
+ 
+ 
+}
+
+.cross i
+{
+
+  position: absolute;
+  right: 0.9em;
+  bottom: 0.8em;
+  font-size: 25px;
+  color: #fff;
+
+}
+ 
+
+
+
+
+.bloc_entree:hover .cross {
+
+  
+  transform: translate(-60px);
+  transition: transform 330ms ease-in-out;
+
+  opacity: 1;
+ 
+ 
+
+
+}
+
+
+
+.bloc_entree:hover .cross i{
+  animation: check 1s;
+
+
+}
+ 
+
+@keyframes check {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+  
+    rotate: 360deg;
+  }
+} 
+
+.bloc_entree:hover .titre h3
+{
+  width: 65%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bloc_entree:hover .sous-titre p
+
+{
+  width: 60%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 /* Plat */
 
 .plat {
@@ -193,20 +297,16 @@ margin-right: 70px;
 
 }
 
-.bloc_plat:hover
-{
-margin-right: 70px;
-
-}
 
 
-.bloc_plat h3 {
+
+.titre h3 {
   margin-bottom: -10px;
   padding-top: 12px;
   margin-left: 12px;
 }
 
-.bloc_plat p {
+.sous-titre p {
   color: #555;
   font-weight: 500;
   font-size: small;
@@ -214,12 +314,93 @@ margin-right: 70px;
   padding-bottom: 12px;
 }
 
-.bloc_plat span {
+.prix {
   position: absolute;
   right: 1rem;
   font-weight: bolder;
   color: #000000;
 }
+
+.bloc_plat:hover .prix
+{
+  transform: translate(-60px);
+  transition: transform 330ms ease-in-out;
+
+
+}
+
+
+.cross {
+
+  position: absolute;
+  right: -3.9em;
+  top: 0em;
+
+  
+  
+  background-color:#99e2d0;
+  width: 70px;
+  height:65px;
+ 
+
+
+
+  border-radius: 0px 15px 15px 0px;
+  color: #fff;
+ 
+  cursor: pointer;
+  opacity: 0;
+ 
+ 
+}
+
+.cross i
+{
+
+  position: absolute;
+  right: 0.9em;
+  bottom: 0.8em;
+  font-size: 25px;
+  color: #fff;
+
+}
+ 
+
+
+
+
+.bloc_plat:hover .cross {
+
+  
+  transform: translate(-60px);
+  transition: transform 330ms ease-in-out;
+
+  opacity: 1;
+ 
+ 
+
+
+}
+
+
+
+.bloc_plat:hover .cross i{
+  animation: check 1s;
+
+
+}
+ 
+
+@keyframes check {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+  
+    rotate: 360deg;
+  }
+} 
+
 
 .trans {
   animation: appear 3s;
@@ -251,6 +432,22 @@ margin-right: 70px;
   }
 }
 
+.bloc_plat:hover .titre h3
+{
+  width: 65%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bloc_plat:hover .sous-titre p
+
+{
+  width: 60%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 /* Dessert */
 
@@ -276,44 +473,47 @@ margin-right: 70px;
 
 
 
-
-
-.bloc_dessert span:hover
-{
-padding-right: 30px;
-}
-
-
-.bloc_dessert h3 {
+.titre h3 {
  
   margin-bottom: -10px;
   padding-top: 12px;
   margin-left: 12px;
 
+  
+ 
 
  
 }
 
-.bloc_dessert p {
+.sous-titre p {
  
   color: #555;
   font-weight: 500;
   font-size: small;
   margin-left: 12px;
   padding-bottom: 12px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+
+ 
 
 
 }
 
-.bloc_dessert span {
+.prix {
   position: absolute;
   right: 1rem;
+  top: 3em;
   font-weight: bolder;
   color: #000000;
-  opacity: 1;
+  font-size: small;
+
+}
+
+.bloc_dessert:hover .prix
+{
+  transform: translate(-60px);
+  transition: transform 330ms ease-in-out;
+
+
 
 }
 
@@ -321,14 +521,15 @@ padding-right: 30px;
 .cross {
 
   position: absolute;
-  right: -4.3em;
-  top: 0.3em;
+  right: -3.9em;
+  top: 0em;
 
   
   
   background-color:#99e2d0;
-  width: 15%;
-  height:60px;
+  width: 70px;
+  height:65px;
+ 
 
 
 
@@ -336,34 +537,47 @@ padding-right: 30px;
   color: #fff;
  
   cursor: pointer;
-    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
-  
   opacity: 0;
-
+ 
+ 
 }
 
 .cross i
 {
-  padding-top: 18px;
-  padding-right: 5px;
+
+  position: absolute;
+  right: 0.9em;
+  bottom: 0.8em;
   font-size: 25px;
   color: #fff;
- 
- 
-
-
 
 }
+ 
+
+
 
 
 .bloc_dessert:hover .cross {
+
+  
+  transform: translate(-60px);
+  transition: transform 330ms ease-in-out;
+
   opacity: 1;
-  transform: translate(-20px);
+ 
+ 
+
 
 }
+
+
+
 .bloc_dessert:hover .cross i{
   animation: check 1s;
+
+
 }
+ 
 
 @keyframes check {
   0% {
@@ -373,9 +587,25 @@ padding-right: 30px;
   
     rotate: 360deg;
   }
+} 
+
+.bloc_dessert:hover .titre h3
+{
+ 
+  width: 65%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
+.bloc_dessert:hover .sous-titre p
 
+{
+  width: 65%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 /* Bouton commander */
 
@@ -446,7 +676,9 @@ padding-right: 30px;
 
 /*  Tablette */
 
-@media all and (min-width: 768px) and (max-width: 992px) {
+@media all and (min-width: 768px) and (max-width: 1024px ){
+
+ 
 
   .flex_contenair {
     display: flex;
@@ -466,9 +698,21 @@ padding-right: 30px;
 
   }
 
+ 
+.sous-titre p
+{
+  width: 50%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 
-
-
+ 
+.titre h3
+{
+  width: 70%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 
 }
 

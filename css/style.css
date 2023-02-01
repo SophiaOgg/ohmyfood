@@ -12,8 +12,7 @@ body
 
 main
 {
-
-  overflow: hidden;
+ overflow: hidden;
 }
 
 
@@ -88,7 +87,7 @@ a
 
 .logo
 {
-    width: 30%;
+   width: 360px;
     padding: 15px;
     
    
@@ -310,7 +309,8 @@ margin-top: 20px;
     line-height: 6px;
     margin-left: 15px;
     padding-bottom: 5px;
-}
+
+  }
 
 
 
@@ -449,7 +449,7 @@ width: 90%;
 
 /* Tablette */
 
-@media all and (min-width: 768px) and (max-width: 992px )
+@media all and (min-width: 768px) and (max-width: 1024px )
 {
  
     #bloc_exp_filtre

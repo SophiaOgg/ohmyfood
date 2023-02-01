@@ -67,7 +67,7 @@ header i {
 
 }
 
-.contenair {
+.contenair{
 
   margin-left: 12px;
   margin-right: 12px;
@@ -183,56 +183,18 @@ header i {
 .bloc_entree:hover .prix
 {
   transform: translate(-60px);
-  transition: transform 330ms ease-in-out;
+  transition: transform 100ms ease-in-out;
 
 
 }
-
-
-.cross {
-
-  position: absolute;
-  right: -3.9em;
-  top: 0em;
-
-  
-  
-  background-color:#99e2d0;
-  width: 70px;
-  height:65px;
- 
-
-
-
-  border-radius: 0px 15px 15px 0px;
-  color: #fff;
- 
-  cursor: pointer;
-  opacity: 0;
- 
- 
-}
-
-.cross i
-{
-
-  position: absolute;
-  right: 0.9em;
-  bottom: 0.8em;
-  font-size: 25px;
-  color: #fff;
-
-}
- 
-
 
 
 
 .bloc_entree:hover .cross {
 
   
-  transform: translate(-60px);
-  transition: transform 330ms ease-in-out;
+  transform: translate(-15px);
+  transition: transform 100ms ease-in-out;
 
   opacity: 1;
  
@@ -324,46 +286,12 @@ header i {
 .bloc_plat:hover .prix
 {
   transform: translate(-60px);
-  transition: transform 330ms ease-in-out;
+  transition: transform 100ms ease-in-out;
 
 
 }
 
 
-.cross {
-
-  position: absolute;
-  right: -3.9em;
-  top: 0em;
-
-  
-  
-  background-color:#99e2d0;
-  width: 70px;
-  height:65px;
- 
-
-
-
-  border-radius: 0px 15px 15px 0px;
-  color: #fff;
- 
-  cursor: pointer;
-  opacity: 0;
- 
- 
-}
-
-.cross i
-{
-
-  position: absolute;
-  right: 0.9em;
-  bottom: 0.8em;
-  font-size: 25px;
-  color: #fff;
-
-}
  
 
 
@@ -372,8 +300,8 @@ header i {
 .bloc_plat:hover .cross {
 
   
-  transform: translate(-60px);
-  transition: transform 330ms ease-in-out;
+  transform: translate(-15px);
+  transition: transform 100ms ease-in-out;
 
   opacity: 1;
  
@@ -402,36 +330,77 @@ header i {
 } 
 
 
-.trans {
-  animation: appear 3s;
-}
-
-.trans1 {
-  animation: appear 1s;
-}
-
-.trans2 {
+.trans_entree {
   animation: appear 2s;
+  animation-delay: 0.1s;
+
+  
 }
 
-.trans3 {
-  animation: appear 3s;
+.trans_plat {
+  animation: appear 2s;
+  animation-delay: 0.2s;
+ 
+  
 }
+
+.trans_dessert {
+  animation: appear 2s;
+  animation-delay: 0.3s;
+  
+ 
+} 
+
+
 
 
 
 @keyframes appear {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(70px);  
+   
   }
 
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0px); 
+   
   }
 }
 
+
+
+.case-1 {
+  animation:  opacity 1s;
+  animation-delay: 0.1s;
+}
+
+.case-2 {
+  animation: opacity 1s;
+  animation-delay: 0.2s;
+
+}
+
+.case-3 {
+  animation: opacity 1s;
+  animation-delay: 0.3s;
+ 
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+
+   
+  }
+
+  100% {
+    opacity: 1;
+    
+   
+  }
+}
 .bloc_plat:hover .titre h3
 {
   width: 65%;
@@ -511,7 +480,7 @@ header i {
 .bloc_dessert:hover .prix
 {
   transform: translate(-60px);
-  transition: transform 330ms ease-in-out;
+  transition: transform 100ms ease-in-out;
 
 
 
@@ -521,14 +490,15 @@ header i {
 .cross {
 
   position: absolute;
-  right: -3.9em;
+  right: -1em;
   top: 0em;
 
   
   
   background-color:#99e2d0;
-  width: 70px;
-  height:65px;
+  padding-top: 2px;
+  width: 60px;
+  height:63px;
  
 
 
@@ -546,7 +516,7 @@ header i {
 {
 
   position: absolute;
-  right: 0.9em;
+  right: 0.7em;
   bottom: 0.8em;
   font-size: 25px;
   color: #fff;
@@ -560,8 +530,8 @@ header i {
 .bloc_dessert:hover .cross {
 
   
-  transform: translate(-60px);
-  transition: transform 330ms ease-in-out;
+  transform: translate(-15px);
+  transition: transform 100ms ease-in-out;
 
   opacity: 1;
  

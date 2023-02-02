@@ -10,8 +10,7 @@ body {
 }
 
 main {
-  margin-left: auto;
-  margin-right: auto;
+
   overflow: hidden;
 }
 
@@ -48,6 +47,22 @@ header i {
 
 }
 
+
+.coeur i {
+    color: #686565;
+    font-size: 1.5rem;
+  }
+
+.coeur i:hover {
+
+    cursor: pointer;
+    background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  
 /* Section presentation  */
 
 #presentation img {
@@ -93,6 +108,7 @@ header i {
 
 .title_menu h2 {
   padding: 15px;
+  margin: 0;
 }
 
 .title_menu i {
@@ -387,7 +403,11 @@ header i {
   animation-delay: 0.3s;
  
 }
-
+.case-4 {
+  animation: opacity 1s;
+  animation-delay: 0.4s;
+ 
+}
 @keyframes opacity {
   0% {
     opacity: 0;

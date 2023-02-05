@@ -229,15 +229,23 @@ header i {
  
 
 @keyframes check {
-  0% {
-    rotate: 0deg;
+  from {
+    -webkit-transform: rotate(0deg);
   }
-  100% {
-  
-    rotate: 360deg;
+  to {
+    -webkit-transform: rotate(360deg);
   }
-} 
-
+}
+@keyframes check {
+  from {
+    transform: rotate(0deg);
+   
+  }
+  to {
+    transform: rotate(360deg);
+   
+  }
+}
 .bloc_entree:hover .titre h3
 {
   width: 65%;
@@ -335,15 +343,7 @@ header i {
 }
  
 
-@keyframes check {
-  0% {
-    rotate: 0deg;
-  }
-  100% {
-  
-    rotate: 360deg;
-  }
-} 
+
 
 
 .trans_entree {
@@ -569,15 +569,7 @@ header i {
 }
  
 
-@keyframes check {
-  0% {
-    rotate: 0deg;
-  }
-  100% {
-  
-    rotate: 360deg;
-  }
-} 
+
 
 .bloc_dessert:hover .titre h3
 {

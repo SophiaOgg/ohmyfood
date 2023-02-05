@@ -87,8 +87,10 @@ a
 
 .logo
 {
-   width: 360px;
-    padding: 15px;
+   
+  padding: 20px;
+  width: 150px;
+  object-fit: cover;
     
    
 }

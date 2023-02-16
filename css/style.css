@@ -183,21 +183,21 @@ margin-left: 90px;
 
 #Filtre
 {
-    margin-top: 50px;
-    margin-right: 20px;
-    margin-left: 15px;
-    padding-bottom: 60px;
+ 
+  padding-top: 20px;
+   
+  padding-bottom: 60px;
+  margin: 25px;
+    
+
 }
 
-.title_filtre
-{
-    margin-left: 15px;
-}
+
 #Filtre li
 {
-  
+   
     margin-top: 30px;  
- 
+   
 }
 
 #choix_filtres ul
@@ -225,7 +225,8 @@ margin-left: 90px;
 #choix_filtres i
 {
    position: absolute;
-   left: 28px;
+   left: 35px;
+   top: 25px;
    font-size: 25px;
     color: gray;
     
@@ -237,11 +238,11 @@ margin-left: 90px;
     border: none;
     border-radius: 50%;
     padding: 6px 12px;
-    font-size: larger;
+    font-size: medium;
    background-color: #9356dc;
    color: white;
    left: -15px;
-   top: 0.2em;
+   top: 9px;
 }
 
 #choix_filtres:hover i
@@ -257,7 +258,7 @@ margin-left: 90px;
 
 #choix_filtres span
 {
-  font-size: 20px;
+  font-size: medium;
   font-weight: bold;
   margin-left: 15px;
   
@@ -274,16 +275,13 @@ margin-left: 90px;
     background:  #eaeaea;
     padding-top: 30px;
     padding-bottom: 60px;
-    max-width: 1400px;
-    margin: 0 auto;
-  
+ 
 
 }
 
 .container_rest
 {
-  margin-left: 25px;
-  margin-right: 20px;
+  margin: 25px;
 }
 .img_rest
 {
@@ -481,6 +479,7 @@ width: 90%;
 .restaurant
 {
   background-color: white;
+
 }
 .title_rest
 {
@@ -541,24 +540,15 @@ width: 90%;
       margin-left: 0;
     
     }
-    
-    #choix_filtres li
-    {
-    width: 90%;
-    
-    }
+  
      
     .restaurant
     {
       background-color: white;
+    
     }
-     /* .type_rest
-     {
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-        
-     } */
+   
+    
 
      .contenair_rest1, .contenair_rest2
 {
